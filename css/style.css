@@ -407,6 +407,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: transparent;
   color: var(--color-white);
   padding: 10px 20px;
   position: relative;
@@ -433,15 +434,6 @@ footer {
 }
 
 @media (min-width: 475px) {
-  .letter-small {
-    font-size: 10px;
-  }
-  .letter-small-medium {
-    font-size: 12px;
-  }
-  .letter-small-big {
-    font-size: 15px;
-  }
   body {
     overflow-x: hidden;
   }
@@ -492,13 +484,14 @@ footer {
 
   .nav-links {
     display: none; /* ocultar los enlaces */
-    flex-direction: column;
     position: absolute;
     top: 100%;
     right: 0;
-    background: transparent;
+    background: var(--background-color-header);
     padding: 20px;
     width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
   }
 
   .nav-links.active {
@@ -507,16 +500,6 @@ footer {
 }
 
 @media (min-width: 828px) {
-  .letter-small {
-    font-size: 15px;
-  }
-  .letter-small-medium {
-    font-size: 20px;
-  }
-  .letter-small-big {
-    font-size: 25px;
-  }
-
   /* El menú toggle se oculta en pantallas grandes */
   .menu-toggle {
     display: none;
@@ -747,8 +730,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
-    color: white;
+    background: transparent;
+    color: var(--color-white);
     padding: 10px 20px;
   }
 
